@@ -62,7 +62,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: dailyclean
-  namespace: gthomas59800-dev
+  namespace: rakittenyt-dev
 rules:
   - verbs:
       - get
@@ -109,11 +109,11 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: dailyclean
-  namespace: gthomas59800-dev
+  namespace: rakittenyt-dev
 subjects:
   - kind: ServiceAccount
     name: dailyclean
-    namespace: gthomas59800-dev
+    namespace: rakittenyt-dev
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
